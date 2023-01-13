@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# We need to add rest_framework to our installed apps
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

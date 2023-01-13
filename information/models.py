@@ -1,8 +1,9 @@
 from django.db import models
 
-# Create your models here.
-class Project(models.Model):
-    title = models.CharField(max_length=200)
+# We neeed to create a model, in this example is videogame
+# as we know Django will create a table depending the selected database(sqlite, postgress, etc)
+# Lets create a model that contains information about a videogame
+class Videogame(models.Model):
+    name = models.CharField(max_length=200)
     description = models.TextField()
-    technology = models.CharField(max_length=200)
-    created_at = models.DateTimeField(auto_now_add=True)
+    creation_date = models.DateTimeField(auto_now_add=True)
